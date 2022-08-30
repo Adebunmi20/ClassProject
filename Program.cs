@@ -4,17 +4,17 @@ namespace ClassProject
 {
     class Program
     {
-        public static string MostCommonWord()
+        static void Main(string[] args)
         {
             string paragraph = "Bob hit a ball, the hit BALL flew far after it was hit";
             string banned = "hit";
             paragraph.ToLower();
 
-            for(int i = 1; i < paragraph.Length; i++)
+            for(char i = 0; i < Convert.ToChar(paragraph); i++)
             {
-                if(paragraph[i].Length == 2 && paragraph[i].Length != banned)
+                if(paragraph[i].Length == 2 && !paragraph[i].Length == banned)
                 {
-                    return paragraph;
+                    Console.WriteLine(i);
                 }
             }
         }
@@ -22,20 +22,24 @@ namespace ClassProject
         // {
 
         // }
-        public static int commonChild()
-        {
-            string s1 = "ABCDY";
-            string s2 = "ABCDFR";
-            
-            for(int i = 0;)
-            {
-
-            }
-        }
+        // public static  commonChild()
+        // {
+        //     int max = 0;
+        //     string s1 = "ABCD";
+        //     string s2 = "ABDC";
+        //     for(int i = 0; i < s1.Length; i++)
+        //     {
+        //         for(int j = 0; j < s2.Length; j++)
+        //         if(s1[i].Length == s2[j].Length)
+        //         {
+        //             return max += i;
+        //         }
+        //     }
+        // }   
 
         // public static bool arrayElement()
         // {
-
+        //    string[] arrayElement = new[] {};
         // }
         // public static string numberGame()
         // {
